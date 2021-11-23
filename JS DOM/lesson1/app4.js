@@ -94,6 +94,9 @@ slice(start, end) tạo ra một mảng mới từ index start -> index end như
 splice(start, deleteCount) xóa(hoặc là thêm) bao nhiêu phần tử do mình chọn tính từ vị trị index start và nó làm thay đổi mảng gốc của mình
 -> sau đó nó trả về một mảng bao gồm các phần tử đã xóa
 
+
+Chuỗi -> mảng oldClass.split(" ");
+Mảng -> chuỗi oldArray.join(" ")
 */
 
 
