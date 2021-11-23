@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body, html {
     margin: 0;
     padding: 0; 
@@ -9,8 +12,18 @@ body, html {
     background-color: #fff;
     color: #333;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 [data-title] {
     color: red;
+}
+
+p {
+    padding: 10px;
+}
+
+.container.box{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    background-color: seashell;
 }
