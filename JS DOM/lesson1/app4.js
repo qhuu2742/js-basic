@@ -17,7 +17,7 @@ function changeContainer(type) {
     containerDiv.setAttribute('class', newClass);
 }
 
-var bodyBackground = document.getElementsByTagName("body")[0];
+var bodyBackground = document.getElementsByTagName("body")[0]; // để truy xuất vào body thì phải truy xuất vào phần tử đầu tiên
 
 function changeBackground(fileName) {
     if (fileName) {
@@ -96,7 +96,7 @@ splice(start, deleteCount) xóa(hoặc là thêm) bao nhiêu phần tử do mìn
 
 
 Chuỗi -> mảng oldClass.split(" ");
-Mảng -> chuỗi oldArray.join(" ")
+Mảng -> chuỗi oldArray.join(" ");
 */
 
 
