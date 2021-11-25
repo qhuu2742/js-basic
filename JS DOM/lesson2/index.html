@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link id="color-skin" rel="stylesheet" href="css/style1.css">
+</head>
+
+<!-- Có 3 cách để import CSS cho một phần tử:
+1. CSS inline, chèn thẳng style vào phần tử đó
+2. Internal CSS, dùng thẻ style trên thẻ head 
+3. External CSS, dùng file riêng ở bên ngoài -->
+
+<body>
+    <div class="container">
+        <!-- id là duy nhất -->
+        <h1>Huwux</h1>
+        <div id="demo">ID DEMO</div>
+
+        <!-- class thì có thể có nhiều -->
+        <div class="demo2" data-title="test">DEMO 1</div>
+        <div class="demo2" data-title="test2">DEMO 2</div>
+        <div class="demo2">DEMO 3</div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <br>
+        <img id="image" class="image nude" src="" alt="">
+        <br>
+        <button onclick="changeStyleColor('css/style1.css')"
+            style="background-color:#ff1a1a; color: #fff; border-color: #ff1a1a;" data-toggle="modal">Bấm để đổi
+            màu</button>
+        <button onclick="changeStyleColor('css/style2.css')"
+            style="background-color:#4d0000; color: #fff; border-color: #4d0000;" data-toggle="modal">Bấm để đổi
+            màu</button>
+
+        <button onclick="changeContainer('wide')" style="background-color:#4d0000; color: #fff; border-color: #4d0000;"
+            data-toggle="modal">Wide</button>
+        <button onclick="changeContainer('box')" style="background-color:#4d0000; color: #fff; border-color: #4d0000;"
+            data-toggle="modal">Box</button>
+
+        <button onclick="changeBackground('images/1.jpg')" data-toggle="modal">Thay ảnh nền 1</button>
+        <button onclick="changeBackground('images/2.jpg')" data-toggle="modal">Thay ảnh nền 2</button>
+        <button onclick="changeBackground()" data-toggle="modal">Không nền</button>
+
+        <div class="dropdown">
+            <button class="btn">dropdown</button>
+            <ul class="dropdown-menu">
+                <li><a href="#">dropdown level 2</a></li>
+                <li><a href="#">dropdown level 2</a></li>
+                <li><a href="#">dropdown level 2</a></li>
+                <li><a href="#">dropdown level 2</a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn">dropdown2</button>
+            <ul class="dropdown-menu">
+                <li><a href="#">dropdown level 2</a></li>
+                <li><a href="#">dropdown level 2</a></li>
+                <li><a href="#">dropdown level 2</a></li>
+                <li><a href="#">dropdown level 2</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
